@@ -1,16 +1,16 @@
 using UnityEngine;
-
-public class GameApp : MonoBehaviour
+using Character.Controller;
+using Character.Models;
+using Character.Views;
+using DefaultNamespace;
+public class GameApp : IGameApp
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void StartApp()
     {
-        
-    }
+        ICharacterView characterView = GameObject.Find("CharacterBase").GetComponent<CharacterView>();
+        ICharacterData characterData = new characterData();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ICharacterBaseController characterBaseController = new CharacterBaseController(characterView, characterData);
+        characterBaseController.StarCharacter();
     }
 }

@@ -1,6 +1,8 @@
 using UnityEngine;
-
-public interface ICharacterBaseController
+namespace Character.Controller
 {
-    
+    public interface ICharacterBaseController
+    {
+        void StarCharacter();
+    }
 }

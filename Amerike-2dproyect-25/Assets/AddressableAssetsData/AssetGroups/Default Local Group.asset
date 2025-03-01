@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: 9b1c4a5f95a36e64eb4a1eb9ed53f1c9
+  m_SerializeEntries:
+  - m_GUID: 44b3d423e2d16bd4da8a7dbe8888abfa
+    m_Address: Assets/BoundleAssets/CharacterA/Base/Animations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54f7ee0a434a181409b85d259e72fd29
+    m_Address: Assets/BoundleAssets/CharacterA/Base/knight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 605672d50d4a2e9458bc2dc35d2e07c8
+    m_Address: Assets/BoundleAssets/CharacterA/Base/Animations/Idle.anim
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b16d6e503e7047043a8348a412998982
+    m_Address: Assets/BoundleAssets/CharacterA/Base/Animations/knight.controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb88aff7610713e45a4f7bc0621b39cd
+    m_Address: Assets/BoundleAssets/CharacterA/Base/SFX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5574072da16c40546b1c328dd016dd62, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5ac015764ab572f4ea63ef9f8c6d7ea9, type: 2}
+    - {fileID: 11400000, guid: 929915f64e212144080bdc4bf2663a59, type: 2}
