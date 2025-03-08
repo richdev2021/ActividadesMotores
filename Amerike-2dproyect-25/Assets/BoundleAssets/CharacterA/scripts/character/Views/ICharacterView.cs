@@ -5,8 +5,16 @@ namespace Character.Views
     {
         SpriteRenderer SpriteRenderer { get; }
 
-        Animator Animator { get; }
-
         Rigidbody2D Rigidbody2D { get; }
+
+        Transform transform { get; }
+
+        bool FlipSprite { get; set; }
+
+        Vector2 Direction { get; }
+
+        void JumpButtonDown();
+
+        int MoveState { set; }
     }
 }

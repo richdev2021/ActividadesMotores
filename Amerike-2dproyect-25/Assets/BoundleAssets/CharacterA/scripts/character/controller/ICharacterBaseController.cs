@@ -1,8 +1,9 @@
 using UnityEngine;
+using System;
 namespace Character.Controller
 {
-    public interface ICharacterBaseController
+    public interface ICharacterBaseController: IDisposable
     {
-        void StarCharacter();
+
     }
 }

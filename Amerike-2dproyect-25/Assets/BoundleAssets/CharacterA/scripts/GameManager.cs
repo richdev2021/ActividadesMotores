@@ -18,4 +18,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnApplicationQuit()
+    {
+        gameApp.Dispose();
+    }
 }
