@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 namespace Character.Views
 {
     public interface ICharacterView
@@ -7,14 +8,13 @@ namespace Character.Views
 
         Rigidbody2D Rigidbody2D { get; }
 
-        Transform transform { get; }
+        Transform Transform { get; }
 
         bool FlipSprite { get; set; }
 
         Vector2 Direction { get; }
 
-        void JumpButtonDown();
-
+        event Action OnJumpButtonDown;
         int MoveState { set; }
     }
 }

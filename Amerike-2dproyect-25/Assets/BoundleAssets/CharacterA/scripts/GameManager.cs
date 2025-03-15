@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             gameApp = new GameApp();
-            gameApp.StartApp();
+            gameApp.StartApp().Forget();
         }
         else {
             Destroy(gameObject);

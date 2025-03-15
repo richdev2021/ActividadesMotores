@@ -1,9 +1,10 @@
-using UnityEngine;
 using Character.Controller;
 using Character.Models;
 using Character.Views;
 using DefaultNamespace;
 using System.Threading;
+using Utils.AdresableLoader;
+using Cysharp.Threading.Tasks;
 public class GameApp : IGameApp
 {
     private CancellationTokenSource gameToken;
@@ -11,10 +12,11 @@ public class GameApp : IGameApp
     public GameApp() {
         gameToken = new CancellationTokenSource();
     }
-    public void StartApp()
+    public async UniTaskVoid StartApp()
     {
-        ICharacterView characterView = GameObject.Find("knight").GetComponent<CharacterView>();
-        ICharacterData characterData = new characterData();
+        // ICharacterView characterView = GameObject.Find("knight").GetComponent<CharacterView>();
+        var characterView = await AdressableLoader.InstantiateAsync<CharacterView>("basePlayer");
+        ICharacterData characterData = new CharacterDataDummy();
 
         ICharacterBaseController CharacterBaseController = new CharacterBaseController(characterView, characterData, gameToken.Token);
     }

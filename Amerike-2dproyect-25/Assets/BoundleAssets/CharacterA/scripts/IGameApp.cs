@@ -1,9 +1,10 @@
 using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 namespace DefaultNamespace
 {
     public interface IGameApp
     {
-        void StartApp();
+       UniTaskVoid StartApp();
     }
 }

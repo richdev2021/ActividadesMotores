@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utils.Bindings;
+using System;
 namespace Character.Views
 {
     [RequireComponent(
@@ -20,7 +21,7 @@ namespace Character.Views
 
         public Rigidbody2D Rigidbody2D => rb2d;
 
-        public Transform transform => transform;
+        public Transform Transform => transform;
 
         public bool FlipSprite {
             get => spriterenderer.flipX;
@@ -28,10 +29,10 @@ namespace Character.Views
         }
         public int MoveState { set => movebinding.Value = value; }
         public Vector2 Direction => direction;
-        public void JumpButtonDown() { 
-        
+        public void JumpButtonDown() {
+            OnJumpButtonDown?.Invoke();
         }
-
+        public event Action OnJumpButtonDown;
         public void setDirection(InputAction.CallbackContext ctx) {
             direction = ctx.ReadValue<Vector2>();
         }

@@ -23,7 +23,8 @@ MonoBehaviour:
   - m_GUID: 54f7ee0a434a181409b85d259e72fd29
     m_Address: Assets/BoundleAssets/CharacterA/Base/knight.prefab
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - basePlayer
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 605672d50d4a2e9458bc2dc35d2e07c8
     m_Address: Assets/BoundleAssets/CharacterA/Base/Animations/Idle.anim
