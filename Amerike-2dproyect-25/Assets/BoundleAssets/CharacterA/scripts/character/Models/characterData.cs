@@ -6,11 +6,15 @@ namespace Character.Models
     public class characterData : ICharacterData
     {
         [SerializeField]
+        private string styleName;
+        [SerializeField]
         private float moveSpeed;
         [SerializeField]
         private float jumpforce;
         public float MoveSpeed { get; }
         public float JumpForce { get;  }
+
+        public String StyleName { get; }
         //public float JumpForce { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     }
 }
