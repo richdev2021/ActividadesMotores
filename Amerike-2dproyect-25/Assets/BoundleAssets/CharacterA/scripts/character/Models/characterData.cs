@@ -15,6 +15,8 @@ namespace Character.Models
         public float JumpForce { get;  }
 
         public String StyleName { get; }
+        
+        //public CharacterData(float moveSpeed, float jumpForce)
         //public float JumpForce { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     }
 }
