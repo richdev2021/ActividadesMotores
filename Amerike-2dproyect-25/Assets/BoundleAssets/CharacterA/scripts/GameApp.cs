@@ -8,7 +8,7 @@ using Cysharp.Threading.Tasks;
 using DefaultNamespace.Utils.DataApi;
 using UnityEditor.U2D.Animation;
 
-public class GameApp : IGameApp
+public class GameApp 
 {
     struct CharacterDatabyStyleName
     {

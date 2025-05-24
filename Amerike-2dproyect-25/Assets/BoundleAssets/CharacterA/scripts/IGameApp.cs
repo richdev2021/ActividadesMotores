@@ -6,5 +6,6 @@ namespace DefaultNamespace
     public interface IGameApp
     {
        UniTaskVoid StartApp();
+       UniTaskVoid stopApp();
     }
 }
